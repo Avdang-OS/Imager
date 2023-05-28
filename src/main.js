@@ -12,6 +12,7 @@ function createWindow() {
     titleBarStyle: "hidden",
     maximizable: false,
     resizable: false,
+    transparent: true,
     frame: false,
     fullscreenable: false,
     webPreferences: {
@@ -22,7 +23,7 @@ function createWindow() {
     },
     icon: "./src/components/images/icon.png",
   });
-  // and load the index.html of the app.
+
   mainWindow.loadFile("./src/index.html");
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
